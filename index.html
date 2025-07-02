@@ -33,6 +33,22 @@
       font-family: 'Segoe UI', sans-serif;
     }
 
+    .navbar-logo {
+      background: linear-gradient(90deg, #35ac78, #5076b5);
+      padding: 0.5rem;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .navbar-logo img {
+      height: 45px;
+      display: block;
+      margin: auto;
+    }
+
     .hero {
       position: relative;
       background: url('marica.png') no-repeat center center;
@@ -43,6 +59,7 @@
       justify-content: center;
       align-items: flex-start;
       padding: 60px;
+      padding-top: 120px;
       color: white;
     }
 
@@ -69,7 +86,7 @@
 
     @media (max-width: 768px) {
       .hero {
-        padding: 40px 20px;
+        padding: 120px 20px 40px 20px;
       }
       .hero h1 {
         font-size: 2rem;
@@ -154,6 +171,11 @@
   </style>
 </head>
 <body>
+
+  <!-- Menu com Logo -->
+  <div class="navbar-logo">
+    <img src="logo.png" alt="Mobimar Logo">
+  </div>
 
   <!-- Hero Section -->
   <header class="hero">
